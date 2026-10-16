@@ -4,6 +4,8 @@ A C11 elevator simulator designed to demonstrate an embedded-style finite state 
 
 > Educational simulation only. It does not control a physical elevator.
 
+For a detailed walkthrough in Turkish, see [Türkçe öğrenme rehberi](docs/TURKCE_REHBER.md).
+
 ## Architecture
 
 ![Architecture diagram: console and timer feed the FSM, which calls the hardware driver to update the virtual PORT](docs/architecture.svg)
@@ -103,4 +105,3 @@ Makefile           Build, run, test, and clean targets
 ## Scope and limitations
 
 The simulator models one elevator with floors 0–5 and a FIFO queue. It does not optimize stops based on travel direction. A physical system would additionally need sensors, independent safety circuits, fault handling, and a certified design.
-

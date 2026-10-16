@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="470" viewBox="0 0 900 470">
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#8ea5c9"/></marker></defs>
+  <rect width="900" height="470" fill="#0b1220"/>
+  <text x="450" y="49" text-anchor="middle" fill="#e9f0ff" font-size="26" font-family="Arial">Elevator controller architecture</text>
+  <rect x="65" y="95" width="220" height="110" rx="16" fill="#172d4d" stroke="#64a2ff" stroke-width="2"/>
+  <text x="175" y="139" text-anchor="middle" fill="white" font-size="20" font-family="Arial">Console + timer</text>
+  <text x="175" y="169" text-anchor="middle" fill="#a9c9f2" font-size="15" font-family="Arial">src/main.c</text>
+  <rect x="340" y="95" width="220" height="110" rx="16" fill="#1c3d3b" stroke="#4dd2ad" stroke-width="2"/>
+  <text x="450" y="139" text-anchor="middle" fill="white" font-size="20" font-family="Arial">FSM + FIFO queue</text>
+  <text x="450" y="169" text-anchor="middle" fill="#a9e7d5" font-size="15" font-family="Arial">src/elevator.c</text>
+  <rect x="615" y="95" width="220" height="110" rx="16" fill="#3c304d" stroke="#b590ea" stroke-width="2"/>
+  <text x="725" y="139" text-anchor="middle" fill="white" font-size="20" font-family="Arial">Driver layer</text>
+  <text x="725" y="169" text-anchor="middle" fill="#d6b9f4" font-size="15" font-family="Arial">src/hardware.c</text>
+  <path d="M287 150H335M562 150H610" stroke="#8ea5c9" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="450" y="240" text-anchor="middle" fill="#afbdd5" font-size="16" font-family="Arial">Requests and ticks become state transitions; transitions call hardware functions.</text>
+  <rect x="615" y="292" width="220" height="102" rx="16" fill="#433b20" stroke="#ffca63" stroke-width="2"/>
+  <text x="725" y="334" text-anchor="middle" fill="white" font-size="20" font-family="Arial">Virtual 8-bit PORT</text>
+  <text x="725" y="364" text-anchor="middle" fill="#ffe2a6" font-size="15" font-family="Arial">motor, door, LED, floor</text>
+  <path d="M725 209V285" stroke="#8ea5c9" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="450" y="433" text-anchor="middle" fill="#889bb8" font-size="15" font-family="Arial">Each layer has one responsibility and can be tested independently.</text>
+</svg>

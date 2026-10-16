@@ -1,0 +1,7 @@
+elevator_sim
+elevator_sim.exe
+test_elevator
+test_elevator.exe
+*.o
+*.obj
+.vscode/

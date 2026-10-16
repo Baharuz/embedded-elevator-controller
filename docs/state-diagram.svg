@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650">
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#a8bad3"/></marker><marker id="e" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#ff7777"/></marker></defs>
+  <rect width="900" height="650" fill="#0b1220"/>
+  <text x="450" y="45" text-anchor="middle" fill="white" font-size="27" font-family="Arial">Elevator finite state machine</text>
+  <g font-family="Arial" text-anchor="middle" font-size="20" fill="white">
+    <rect x="335" y="75" width="230" height="72" rx="18" fill="#35477d" stroke="#8499ff" stroke-width="2"/><text x="450" y="120">IDLE</text>
+    <rect x="80" y="270" width="235" height="72" rx="18" fill="#20547f" stroke="#59a7ff" stroke-width="2"/><text x="197" y="315">MOVING_UP</text>
+    <rect x="585" y="270" width="235" height="72" rx="18" fill="#20547f" stroke="#59a7ff" stroke-width="2"/><text x="702" y="315">MOVING_DOWN</text>
+    <rect x="335" y="425" width="230" height="72" rx="18" fill="#176b55" stroke="#51dab0" stroke-width="2"/><text x="450" y="470">DOOR_OPEN</text>
+    <rect x="335" y="555" width="230" height="72" rx="18" fill="#842e35" stroke="#ff7777" stroke-width="2"/><text x="450" y="600">EMERGENCY</text>
+  </g>
+  <g stroke="#a8bad3" stroke-width="3" fill="none" marker-end="url(#a)">
+    <path d="M370 147L246 266"/><path d="M530 147L654 266"/>
+    <path d="M251 343L379 421"/><path d="M649 343L521 421"/>
+    <path d="M335 462H36V111H328"/>
+    <path d="M450 148V418"/>
+    <path d="M568 590H640V155H569"/>
+  </g>
+  <g font-family="Arial" font-size="15" fill="#d9e4f5">
+    <text x="215" y="205">target above</text><text x="618" y="205">target below</text>
+    <text x="138" y="394">target reached</text><text x="632" y="394">target reached</text>
+    <text x="48" y="382">door timer expires</text>
+    <text x="459" y="235">same floor</text>
+    <text x="646" y="530">reset</text>
+  </g>
+  <g stroke="#ff7777" stroke-width="2.5" stroke-dasharray="8 6" fill="none" marker-end="url(#e)">
+    <path d="M198 344V592H328"/><path d="M702 344V592H572"/>
+    <path d="M450 498V548"/><path d="M565 110H855V590H572"/>
+  </g>
+  <text x="205" y="547" font-family="Arial" fill="#ff9c9c" font-size="16">emergency</text>
+  <text x="730" y="550" font-family="Arial" fill="#ff9c9c" font-size="16">emergency</text>
+  <text x="462" y="530" font-family="Arial" fill="#ff9c9c" font-size="15">stop</text>
+</svg>

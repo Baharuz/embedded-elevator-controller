@@ -2,10 +2,6 @@
 
 A C11 elevator simulator designed to demonstrate an embedded-style finite state machine (FSM), a hardware driver layer, bitwise register operations, and a FIFO floor-request queue. The console stays responsive while the elevator moves, so new calls and emergency stops can be entered at any time.
 
-> Educational simulation only. It does not control a physical elevator.
-
-For a detailed walkthrough in Turkish, see [Türkçe öğrenme rehberi](docs/TURKCE_REHBER.md).
-
 ## Architecture
 
 ![Architecture diagram: console and timer feed the FSM, which calls the hardware driver to update the virtual PORT](docs/architecture.svg)

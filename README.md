@@ -39,9 +39,11 @@ For example, `0x21` (`0010 0001`) means floor 2 with the up motor running. `0x34
 
 ## Simulation demo
 
-The image below presents output captured from a simulator run: a request for floor 3, movement, arrival, register display, and emergency stop.
+These images present console output from two simulator runs. They show a request for floor 3 through arrival, and an emergency stop while traveling to floor 5.
 
 ![Console output showing the elevator moving from floor 1 to 3 and entering emergency state](docs/simulation-demo.png)
+
+![Console output showing an emergency stop while moving toward floor 5](docs/emergency-demo.png)
 
 Commands are entered one per line:
 
